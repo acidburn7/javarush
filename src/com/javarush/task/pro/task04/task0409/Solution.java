@@ -1,24 +1,21 @@
-package com.javarush.task.pro.task04.task0408;
+package com.javarush.task.pro.task04.task0409;
 
 import java.util.Scanner;
 
 /* 
-Максимум из введенных чисел
+Минимум из введенных чисел
 */
 
 public class Solution {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int max = Integer.MIN_VALUE;
-
+        int min = Integer.MAX_VALUE;
         while(scanner.hasNextInt()) {
             int number = scanner.nextInt();
-            if (number % 2 == 0 && number > max) {
-                max =  number;
+            if (number < min) {
+                min = number;
             }
-
         }
-        System.out.println(max);
-
+        System.out.println(min);
     }
 }
