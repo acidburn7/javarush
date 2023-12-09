@@ -12,8 +12,9 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);
         int radius = scanner.nextInt();
         double pi = 3.14;
-        int s = 0;
+        double s = 0;
 
-        s =
+        s = pi * radius * radius;
+        System.out.println((int)s);
     }
 }
